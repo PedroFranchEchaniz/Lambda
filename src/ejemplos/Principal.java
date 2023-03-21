@@ -8,11 +8,10 @@ public class Principal {
 		IOperacionEntera suma=(a,b)->a+b;
 		IOperacionEntera resta=(a,b)->a-b;
 		IOperacionEntera multi=(a,b)->a*b;
-		
-		suma.operar(0, 0);
-		resta.operar(0, 0);
-		multi.operar(0, 0);
-		
+				
+		System.out.println(suma.operar(1, 2));
+		System.out.println(resta.operar(2, 1));
+		System.out.println(multi.operar(2, 1));
 	}
 
 }
