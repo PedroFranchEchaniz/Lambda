@@ -11,6 +11,7 @@ public class Principal {
 		IOperacionEntera suma=(a,b)->a+b;
 		IOperacionEntera resta=(a,b)->a-b;
 		IOperacionEntera multi=(a,b)->a*b;
+<<<<<<< HEAD
 		
 		suma.operar(0, 0);
 		resta.operar(0, 0);
@@ -22,6 +23,12 @@ public class Principal {
 		BiFunction <Integer, Integer, Integer> suma2=(a, b)->a+b;
 		System.out.println(suma2.apply(2, 3));
 		
+=======
+				
+		System.out.println(suma.operar(1, 2));
+		System.out.println(resta.operar(2, 1));
+		System.out.println(multi.operar(2, 1));
+>>>>>>> 2287318e7462b9170eaea1b912705e76d28fe4db
 	}
 
 }
