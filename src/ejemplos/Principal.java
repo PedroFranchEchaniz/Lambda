@@ -1,5 +1,8 @@
 package ejemplos;
 
+import java.util.function.BiFunction;
+import java.util.function.Function;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -12,6 +15,12 @@ public class Principal {
 		suma.operar(0, 0);
 		resta.operar(0, 0);
 		multi.operar(0, 0);
+		
+		Function <Integer /*Parametro de entrada*/,  Integer/*Parametro de salida*/> operacion = a -> a*2;
+		operacion.apply(3);
+		
+		BiFunction <Integer, Integer, Integer> suma2=(a, b)->a+b;
+		System.out.println(suma2.apply(2, 3));
 		
 	}
 
